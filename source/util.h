@@ -3,6 +3,7 @@
 #include <cstring>
 #include <vector>
 #include <cstdio>
+#include <algorithm>
 #include <cstdarg>		//va_list and stuff
 #include <map>
 #include <cstdlib>
@@ -118,5 +119,7 @@ namespace util
     void overclockSystem(bool enable);
 
     void PrintToNXLink(const char *format, ...);
+    
+    void PrintResultToNXLink(Result rc);
 }
 #endif // UTIL_H
